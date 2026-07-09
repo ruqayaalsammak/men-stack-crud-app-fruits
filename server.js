@@ -6,7 +6,7 @@ const app = express()
 app.use(morgan('dev'))
 
 app.get("/", async (req, res) => {
-  res.send("hello, friend!");
+  res.render("home.ejs");
 });
 
 app.listen(3000, () => {
